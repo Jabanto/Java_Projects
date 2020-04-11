@@ -1,0 +1,24 @@
+import akka.actor.ActorRef
+
+/**
+  * Created by JAbanto on 26.06.2017.
+  */
+object SimpleActorMain extends App{
+
+  val system = ActorSystem("simpleActor") // Actor System Creation
+
+  val simpleActor:ActorRef = system.actorOf(SimpleActor.props) //ACTOR REF
+
+  simpleActor ! Put("hola") // TELL
+  simpleActor ! 42
+  simpleActor ! PutTwice("a message")
+
+  println("enter to continue")
+  scala.io.StdIn.readLine()
+  simpleActor ! PrintAll
+
+  println("entter to continue")
+  scala.io.StdIn.readLine()
+
+
+}

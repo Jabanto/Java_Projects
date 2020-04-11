@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><users>
+    <user id="120">
+        <userName>TettNutzer</userName>
+        <datum>Heute</datum>
+        <anmeldungZeit>Gestern</anmeldungZeit>
+        <abmeldungZeit>Heute</abmeldungZeit>
+    </user>
+    <user id="130">
+        <userName>TettNutzrfer</userName>
+        <datum>Heute</datum>
+        <anmeldungZeit>Gestern</anmeldungZeit>
+        <abmeldungZeit>Heute</abmeldungZeit>
+    </user>
+    <user id="140">
+        <userName>TestName</userName>
+        <datum>HeuteTest</datum>
+        <anmeldungZeit>Gesternzeit</anmeldungZeit>
+        <abmeldungZeit>HeuteTest</abmeldungZeit>
+    </user>
+    <user id="140">
+        <userName>TestName</userName>
+        <datum>HeuteTest</datum>
+        <anmeldungZeit>Gesternzeit</anmeldungZeit>
+        <abmeldungZeit>HeuteTest</abmeldungZeit>
+    </user>
+
+    <user id="140">
+        <userName>Nutzer</userName>
+        <datum>2018-03-22</datum>
+        <anmeldungZeit>Thu Mar 22 14:54:52 CET 2018</anmeldungZeit>
+        <abmeldungZeit>Thu Mar 22 14:55:14 CET 2018</abmeldungZeit>
+    </user>
+    <user id="140">
+        <userName>Nutzer</userName>
+        <datum>2018-03-22</datum>
+        <anmeldungZeit>Thu Mar 22 14:56:44 CET 2018</anmeldungZeit>
+        <abmeldungZeit>Thu Mar 22 14:56:54 CET 2018</abmeldungZeit>
+    </user>
+<user id="140"><userName>Nutzer</userName><datum>2018-03-26</datum><anmeldungZeit>Mon Mar 26 10:38:55 CEST 2018</anmeldungZeit><abmeldungZeit>Mon Mar 26 10:39:05 CEST 2018</abmeldungZeit></user><user id="140"><userName>Nutzer</userName><datum>2018-03-26</datum><anmeldungZeit>Mon Mar 26 11:23:57 CEST 2018</anmeldungZeit><abmeldungZeit>Mon Mar 26 11:24:07 CEST 2018</abmeldungZeit></user></users>

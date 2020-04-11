@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<aufgaben>
+    <aufgabe id="W2015_A1_H5">
+        <aufgabeName>Benutzer Logout</aufgabeName>
+        <aufgabeBeschreibung>
+            Karwell GmbH will für ihre Autohäuser einige nuen Anwendungen erstellen lassen.
+            a) Die Autohäuser der KarWell GmbH sind mit WLANS ausgestattet. Angemeldete Nutzer, die ein WLAN Zeit nicht
+            sollen automatisch abgemeldet werden.
+            nutzen,
+            Dazu soll eine Anwendung nach folgenden Angaben erstellt werden:
+            -Das Programm wird nach den Login des Benutzers gestartet.
+            -Nach zehn Minuten ohne Aktivität des Nutzers erfoglt die automatische Abmeldung vom WLAN
+            -Vor der Abmeldung werden Name des Nutzers, Datum sowie die Urrhzeiten der Anmeldung und Abmeldung in einer
+            XML
+            Logdatei gespeichert.
+        </aufgabeBeschreibung>
+    </aufgabe>
+    <aufgabe id="S2015_A1_H2">
+            <aufgabeName>lkw</aufgabeName>
+            <aufgabeBeschreibung>lala</aufgabeBeschreibung>
+    </aufgabe>
+
+    <aufgabe id="S2015_A1_H3">
+        <aufgabeName>Angebot erstellen</aufgabeName>
+        <aufgabeBeschreibung>
+            Die Logistik GmbH benötigt eine Methode zurErstellung von Angeboten
+            Angabeben, nach denen ein ANgebot erstellt wird:
+            -Ein Kunde will ein Transportgut an einem bestimmeten Versandtermin (Datum) von einem Start- zu einem
+            Zielort transportieren lassen.
+            -An einem Versand können je nach Auslastung keine, eine oder mehrere Routen zur Verfügung stehen.
+            -Eine Route vom Start- zum Zielort besteht aus einer oder mehreren Strecken.
+            -Es wird die Route mit dem niedrigsten Preis (Summe der Streckenpreise) angeboten.
+            -Es gibt zwei Rabatte: einem Gewichtsrabatt (nach dem Gewicht des Transportguts) und einen Kundenrabatt
+            (ist in Kundendatenbank gespeichert). Gewährt wird allein der für den Kunden günstigere Rabatt.
+
+            Für den Algorithmus stehen die Methoden der Klassen AngebotErstellung, Angebot, Strecke und Route zur
+            Verfügung (siehe perforierte Anlage).
+
+            ------------------------------------------------------------------------------------------------------
+            Methode:                                    Erläuterun:
+            GetRouten(Klasse AngebotErstellung)         Leifert ein Array* vom Typ Route der möglichen Routen
+            ErstelleAngebot (Klasse AngebotsErstellung) Liefert Referenz vom Rückgabetyp Angebot
+            GetStrecken(Klasse Route)                   Liefert ein Array* vom Typ Strecke
+            ------------------------------------------------------------------------------------------------------
+            *Für Arrays steht das Attribut Length zur Verfügung (siehe Beispiel)
+        </aufgabeBeschreibung>
+    </aufgabe>
+    <aufgabe id="W2013_A1_H3">
+        <aufgabeName>Report Generator</aufgabeName>
+        <aufgabeBeschreibung>
+            Die Internaional Boxes Ag vertriebt die Verpackungen über Handelsvertreter
+            Zur Auswertung der monatlichen Provisionsabrechnung soll folgender Report ausgegeben werden:
+
+            In einer zweidimensionalen Tabelle (VKA) sind die Daten nach Vertreter, Kunde und Auftrag wie
+            nachfolfend beschrieben erfasst. (Siehe AP2 Doku)
+
+            Zur Realisierung stehen folgende Funktionalitäten zur Verfügung:
+            ------------------------------------------------------------------------------------------------------
+            Funktion                            Rückgabe            Beschreibung
+            getOrderData(Auftragsnummer)        Order-Objekt        Liefert alle erforderlichen Auftragdaten
+            getAgentData(Vetreternummer)        Agent-Objekt        Liefert alle erforderlichen Vetreterdaten
+            getCustomerData(Kundennummer)       Custommer-Objekt    Liefert alle erforderlichen Kundendaten
+            printOrderData(OrderObjekt)         ----                Druck alle Auftragsinformation entsprechend der Ausgabe
+            printAgentData(AgentObjekt)         ----                Druck alle Vetreterinformation entsprechend der Ausgabe
+            printAgentData(CustomerObjekt)      ----                Druck alle Kundeninformation entsprechend der Ausgabe
+            printSum("Text",Netto,Prov)         ----                Druck die angegebenen Werte mit dem Text entsprechend der Ausgabe für eine Summenzeile
+            printMaxText(Vetreternummer,Netto)  ----                Druck die angegebenen Werte mit dem Text entsprechend der Ausgabe für eine Summenzeile
+            ------------------------------------------------------------------------------------------------------
+            Für jede in der Klasse Order angegebene Eingenschaft, gibt es eine entprechende get-Methode.
+            Erstellen Sie einen Algorithmus, der den angegebenen Report erzeugt(Pseudocode):
+
+        </aufgabeBeschreibung>
+    </aufgabe>
+    <aufgabe id="W2011_A1_H2" >
+        <aufgabeName>Password Generator</aufgabeName>
+        <aufgabeBeschreibung>
+            In Rahmen des Projekts werden Sie damit beauftragt, eine Funktion zu erstellen, die ein achtstelliges
+            Password generiert und an die aufrufende Stelle zurückiefert.
+            Das Passwort soll sich aus den Zeichen des ASC-II Zeichensatzes (Siehe Tabelle in Doku),
+            Zeichen 33-126 zusammensetzen und genau zwei Ziffern beinhalten
+
+            Erstellen Sie auf der Folgeseite eine Lösung im Pseudocode oder Programmablaufplan bzw Struktugramm
+            für die geforderte Funktionlität
+
+            Zur Verfügung steht Ihnen dafür die Funktion:
+            radom(): Liefert eine Zufallszahl zwischen 0  und 1 (1 exklusiv)
+
+            Die ASCII-Tabelle ist in Doku zu Verfügung.
+
+        </aufgabeBeschreibung>
+
+    </aufgabe>
+    <aufgabe id="S2014_A1_H3">
+        <aufgabeName>Rechnungs Erstellung </aufgabeName>
+        <aufgabeBeschreibung>
+            Zur Rechnugserstellung benötigt die Augustiner AG ein neues Programm.
+
+            Bei der zu erstellenden Methode rechnungsausgabe sind foldende Angaben zu berücksichtigen:
+            -Die Methode soll für einen Kunden die Rechnungen für dessen Bestellungen ausgeben.
+            -Die Methode wird eine Referenz auf ein Kundenobjekt als Parameterübergeben.
+            -Die Methode soll die Rechnungsbeträge der Rechnungen zu einem Gesammtbetrag addieren und zuürckgeben.
+            -Die Methode soll zur Klasse RechnungsDruck gehören.
+            -Die Methode soll auf einer Rechnungseite höchstens 20 Positionszeilen ausgeben, danach soll einen Wechsel
+            auf die nächste Seite durchführen.
+            -Jede Rechnung beginnt mit der Seiten-Nummer 1.
+
+        </aufgabeBeschreibung>
+
+
+    </aufgabe>
+    <aufgabe id="S2014_A1_H4">
+        <aufgabeName>QR Erstellung</aufgabeName>
+        <aufgabeBeschreibung>
+            Die Lila AG will QR-Codes mit Werbebotschaften einsetzen. Zur Erstellung dieser QR-Codes soll
+            eine Methode entwickelt werdene.
+            Der Werbetext soll wie folgt codiert werden:
+            1. Setzen der Kennung "0100" für der Zeicensatz ISO 8859 an den Anfang des Codes.
+            2. Codierung des Textes: Für jedes Zeichen des Werbetextes wird aus dem Zeichensatz ISO-8859 der
+            enstprechende Binärcode als String ermittelt und an den Code angeführt.
+                Der Binärcode setzt sich aus einem Zeilenwert un einem Spaltenwert zusammen (siehe unten stehen Tabelle).
+                Beispiel: Das Zeichen "G" hat den Binärcode "0100011" (Zeile : "0100", Spalte "0111")
+            3. Anfügen der Ende-Kennung "0000" an das Ende des Codes.
+            Das Zeichen des Zeichensatzes ISO-8859-1 und dessen Binärwerte sind in dem zweidimensinaen String-Arrray
+            zeichenSatz gespeichert.
+            Das Array ist wie folgt aufgebaut (Zeilen- und Spaltenangaben sind nicht Teil des Arrays)
+
+        </aufgabeBeschreibung>
+    </aufgabe>
+</aufgaben>

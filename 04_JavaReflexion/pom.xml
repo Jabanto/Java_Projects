@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Java_Reflexion</groupId>
+    <artifactId>JavaReflexion</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Multithread_3</module>
+        <module>Multithread_4_Komunikation</module>
+        <module>Debugging</module>
+        <module>Orientierungfurprofis_01</module>
+        <module>Objekt_Orientirung_Profis_02</module>
+        <module>Objekt_Orientierung_Profis_03</module>
+        <module>Objekt_Orientierung_Profis_04</module>
+        <module>Objekt_Orientierung_Profis_05</module>
+        <module>Objekt_Orientierung_Profis_06</module>
+        <module>Objekt_Orientierung_Profis_07</module>
+        <module>Objekt_Orientierung_Profis_08</module>
+        <module>Obekt_Orientierung_Profis_09</module>
+        <module>Objekt_Orientierung_Profis_10</module>
+        <module>Objekt_Orientierung_Profis_11</module>
+        <module>Objekt_Orientierung_Profis_12</module>
+        <module>Swing</module>
+        <module>Laufzeiten</module>
+        <module>SwingAndYoutube</module>
+        <module>Generics_023</module>
+        <module>Generics_024</module>
+        <module>Generics_025</module>
+        <module>GenerischeMethoden_026</module>
+        <module>Generics_Wildcards</module>
+        <module>Txt_Datei_schreiben</module>
+        <module>Zwischenablage</module>
+        <module>Drucken</module>
+        <module>IntroducctionAkka</module>
+        <module>CodingBat</module>
+        <module>RomanConverter</module>
+        <module>AP2015Sommrr_AG1_Handlungschritt_2</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+
+
+
+    </dependencies>
+
+
+</project>
