@@ -1,7 +1,7 @@
 package com.bhs.Main;
 
 
-import com.bhs.Mapper.NumberToRoman;
+import com.bhs.Mapper.NumberConverter;
 import com.bhs.Mapper.RomanToNumber;
 
 import java.io.BufferedReader;
@@ -33,7 +33,7 @@ public class main {
 
             System.out.println("Bitte Geben Sie ein RomanischeNummer(Max C) oder ein Number bis 100");
 
-            inputStr = readImput();
+            inputStr = readInput();
 
             /// will be check that the Imput values are RomanNumber
             if (inputStr.matches("^[IVXLDM]+$")){
@@ -46,7 +46,7 @@ public class main {
                 System.out.println("Program wird beendet...");
                 endProgram = true;
             }else{
-                System.out.println("Ungültige Eingabe ,es würde:  " +inputStr+ " eingeben , versuchen es Sie noch mal.");
+                System.out.println("Ungültige Eingabe ,es würde:  " +inputStr+ " eingegeben , versuchen Sie es noch mal.");
             }
 
         }while (!endProgram);
@@ -61,10 +61,10 @@ public class main {
     private static void convertArabicToRoman(String arabicNumber) {
         int number;
         number =  Integer.valueOf(arabicNumber);
-        if ((number < 1 || number < 100)){
+        if ((number < 1 || number <= 100)){
 
-            System.out.println("Romasiche Character eingegeben");
-            System.out.println(number + " romanische Nummer -> " + NumberToRoman.convertToRomanNumber(number));
+            System.out.println("Arabische Nummer eingegeben");
+            System.out.println(number + " Romanische Nummer wäre es -> " + NumberConverter.convertToRomanNumber(number));
         }
     }
 
@@ -75,8 +75,8 @@ public class main {
     private static void convertRomanToArabic(String romanNumber) {
         String roman;
         roman = romanNumber;
-        System.out.println("Romasiche Character eingegeben");
-        System.out.println(roman + " arabische Nummer --> "+ RomanToNumber.convertToArabicNumber(roman));
+        System.out.println("Romanische Character eingegeben");
+        System.out.println(roman + " Arabische Nummer wäre es -> "+ NumberConverter.convertToArabicNumber(roman));
     }
 
     /**
@@ -84,7 +84,7 @@ public class main {
      * @see  BufferedReader class in this case allow us to red a clomplete comand line
      * @return return  a String without leading and trailing white spaces
      */
-    private static String readImput() {
+    private static String readInput() {
 
         String inputString = "";
         try {
@@ -92,7 +92,7 @@ public class main {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             inputString = br.readLine().toString().trim();
         }catch (IOException e){
-            System.out.printf("Folgende Fehler bei einlesen wurde passiert (Details auf English) : {0} ",e.getMessage());
+            System.out.printf("Folgende Fehler bei Einlesen wurde passiert (Details auf English) : {0} ",e.getMessage());
         }
         return inputString;
     }
