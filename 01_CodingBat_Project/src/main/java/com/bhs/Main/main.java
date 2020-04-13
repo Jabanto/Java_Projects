@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 /**
  * Sample Tool that convert roman numbers to arabic number and inverse
  * Current Language ist it German
- * @TODO Current range of number are 100
+ * @TODO Current range of number are 100 , be ,ay to increase this range until 1000
  * <pre>
  *     convertRomanToArabic(x) or covertArabicToRoman(x)
   * </pre>
@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
  * */
 public class main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         String inputStr = "";
         boolean endProgram = false;
@@ -32,6 +32,7 @@ public class main {
         do {
 
             System.out.println("Bitte Geben Sie ein RomanischeNummer(Max C) oder ein Number bis 100");
+
             inputStr = readImput();
 
             /// will be check that the Imput values are RomanNumber
@@ -45,7 +46,7 @@ public class main {
                 System.out.println("Program wird beendet...");
                 endProgram = true;
             }else{
-                System.out.println("Ungültige Eingabe '"+inputStr+"'.");
+                System.out.println("Ungültige Eingabe ,es würde:  " +inputStr+ " eingeben , versuchen es Sie noch mal.");
             }
 
         }while (!endProgram);
@@ -54,7 +55,7 @@ public class main {
 
 
     /***
-     * Convert the checked number into a roman number
+     * Convert the checked arabic number into a roman number
      * @param arabicNumber validated number with the correct arabic format
      */
     private static void convertArabicToRoman(String arabicNumber) {
@@ -79,16 +80,21 @@ public class main {
     }
 
     /**
-     * Read the input on the console
-     * @return return  a valid string value
-     * @throws IOException handle no expected or null exceptions
+     * Read the input text from a buffering character to provide the efficient read of the character using
+     * @see  BufferedReader class in this case allow us to red a clomplete comand line
+     * @return return  a String without leading and trailing white spaces
      */
-    private static String readImput() throws IOException{
+    private static String readImput() {
 
-        String enter = "";
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        enter = br.readLine().toString().trim();
-        return enter;
+        String inputString = "";
+        try {
+         // we use try catch then method readLine uses throws IO exception and we need to catch the IOException
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            inputString = br.readLine().toString().trim();
+        }catch (IOException e){
+            System.out.printf("Folgende Fehler bei einlesen wurde passiert (Details auf English) : {0} ",e.getMessage());
+        }
+        return inputString;
     }
 
 
