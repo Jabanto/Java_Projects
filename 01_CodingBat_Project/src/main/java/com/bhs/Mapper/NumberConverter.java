@@ -9,6 +9,8 @@ import com.bhs.Main.Roman;
  *     NumberConverter.convertToRomanNumber(arabicNumber) or NumberConverter.convertToArabicNumber(romanNumber)
  * </pre>
  *
+ * @author JefeMaestro
+ * @version 1.0.0
  */
 public abstract class NumberConverter {
 

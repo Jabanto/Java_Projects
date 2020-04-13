@@ -16,7 +16,8 @@ import java.io.InputStreamReader;
  *     convertRomanToArabic(x) or covertArabicToRoman(x)
   * </pre>
  * @author JefeMaestro
- * @param x a string value that can be arabic number[0-9] or a valid Roman number [IVXLDM]
+ * @param x value {@code string} that can be arabic number[0-9] or a valid Roman number [IVXLDM]
+ * @version 1.0.0
  *
  * */
 public class main {

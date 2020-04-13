@@ -1,7 +1,11 @@
 package com.bhs.Main;
 
 /**
- * Created by JAbanto on 06.10.2017.
+ * Class with all the definitions list needed to convert numbers
+ * @author JefeMaestro
+ * @version 1.0.0
+ *
+ * TODO rename Roman class to Definitions
  */
 public class Roman {
 
@@ -19,16 +23,22 @@ public class Roman {
 
     }
 
-
+    /**
+     * Retrieve the value of decimalList
+     * @return the list {@code int[]} defined on constructor
+     * @see Roman()
+     */
     public int[] getDecimalList() {
         return decimalList;
     }
 
+    /**
+     * Retrieve the value of romanList
+     * @return the list {@code String[]} defined on constructor
+     * @see Roman()
+     */
     public String[] getRomanList() {
         return romanList;
     }
-
-
-
 
 }
