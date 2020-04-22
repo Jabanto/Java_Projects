@@ -2,7 +2,6 @@ package com.bhs.Main;
 
 
 import com.bhs.Mapper.NumberConverter;
-import com.bhs.Mapper.RomanToNumber;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +10,7 @@ import java.io.InputStreamReader;
 /**
  * Sample Tool that convert roman numbers to arabic number and inverse
  * Current Language ist it German
- * @TODO Current range of number are 100 , be ,ay to increase this range until 1000
+ * Lying between 1 and 3999
  * <pre>
  *     convertRomanToArabic(x) or covertArabicToRoman(x)
   * </pre>
@@ -20,7 +19,7 @@ import java.io.InputStreamReader;
  * @version 1.0.0
  *
  * */
-public class main {
+public class ConvertNumberToolStart {
 
     public static void main(String[] args) {
 
@@ -36,10 +35,10 @@ public class main {
 
             inputStr = readInput();
 
-            /// will be check that the Imput values are RomanNumber
+            /// will be check that the Imput value has the correct roman number format
             if (inputStr.matches("^[IVXLDM]+$")){
                 convertRomanToArabic(inputStr);
-            // will be check that the numbers has the correct format
+            // will be check that the input value has the correct arabic number format
             }else if (inputStr.matches("^[0-9]+$")){
                 convertArabicToRoman(inputStr);
             // will be check that another options haven the correct format
@@ -97,6 +96,5 @@ public class main {
         }
         return inputString;
     }
-
 
 }
