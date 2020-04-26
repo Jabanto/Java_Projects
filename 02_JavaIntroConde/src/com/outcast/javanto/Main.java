@@ -1,33 +1,26 @@
-import clases.*;
+package com.outcast.javanto;
+import com.outcast.javanto.clases.*;
+import com.sun.xml.internal.bind.v2.TODO;
 
 import java.awt.*;
 
-/**
- * Created by Jefe Maestro on 14/08/2016.
- */
 public class Main {
 
+    /**
+     * Este Projecto describe partes importantes y basicas de un programa OOP
+     * Descripcion del metodo main
+     * Es un metodo de clase , es decir no se crea automaticamente una instancia de que contiene el Metodo main()
+     * Public en el metodo main quiere decir que esta disponible en otra classe y objetos
+     * Static significa que es un metodo de clase Main solo aplicable aqui
+     * Void que no devuele valores donde entre los { se escribe el codigo de programa}
+     *
+     * @autor Javanto
+     * @param args toma un parametro que es un array de String , esto significa que el ejecutable se puede ejecutar ingresando parametros
+     *             por ejemplo llamar al programa usando cmd y agregando al .exe parametros
+     * @TODO Add new command menu to execute all clases on this main method
+     */
 
-    /*
-    * DEScripcion del metod main
-    *
-    * es un metodo de clase , es decir no se crea automaticamente una onstacio de la clase que contiene el
-    * Metodo main()
-    *
-    * public quiere decir que esta disponible en otrs classe y objetos
-    *
-    * static significa que es un metodo de clase Main solo aplicable aqui
-    *
-    * void que no devuelve valores
-    *
-    * main(String[] args) toma un parametro que es un arraz de
-    * Strings
-    * {} el codigo nesecario par inicar nuestra aplicacion
-    *
-    * */
     public static void main(String[] args) {
-
-
 
 
         System.out.print("Tu peso en la Tierra es de ");
@@ -48,7 +41,7 @@ public class Main {
 
         System.out.println("----------------");
 
-       float fahFl = 86;
+        float fahFl = 86;
         System.out.println(fahFl + " grados Fahrenheit son ...");
         fahFl = fahFl -32;
         fahFl = fahFl / 9;
@@ -62,35 +55,30 @@ public class Main {
         celFl = celFl +32;
         System.out.println(celFl + " grados Fahrenheit  ");
 
-        Que nuevoQue = new Que(5);
-
-        nuevoQue.comprobar("Verde");
-        nuevoQue.condicional(5);
-
-        Calender nuevoCalender = new Calender();
+        CalenderService nuevoCalender = new CalenderService();
         nuevoCalender.mostrarSaludo();
 
-        Array nuevo = new Array();
+        ArrayService nuevo = new ArrayService();
         nuevo.getMarcaImpresotas();
 
         //Repeticiones nuevoJuego = new Repeticiones();
 
-        loopFor nuevoLoop = new loopFor();
+        LoopService nuevoLoop = new LoopService();
         nuevoLoop.loopy();
-        nuevoLoop.loopz2();
+        nuevoLoop.loop2();
         //nuevoLoop.loopDo();
         //nuevoLoop.continueLoop();
         //nuevoLoop.saliryNombreLoops();
 
         // Arrays
 
-        Array nuevoArray = new Array();
+        ArrayService nuevoArray = new ArrayService();
         nuevoArray.eliminarEspacio();
 
         //herencias y super clases;
 
         Point objeto1 = new Point(11,22);
-        Punto3D objeto2 = new Punto3D(7,6,64);
+        SuperClass_Service objeto2 = new SuperClass_Service(7,6,64);
 
         objeto2.comprobarPunto2D(objeto1.x,objeto1.y);
         objeto1.move(4,13);
@@ -101,24 +89,21 @@ public class Main {
         objeto2.move(10,22,71);
         objeto2.translate(-20,-20,-20);
 
-        Tokenizer nuevoToken = new Tokenizer();
+        Tokenizer_Service nuevoToken = new Tokenizer_Service();
         nuevoToken.tokenTest();
 
-        ConfigurarPunto puntoPelota = new ConfigurarPunto(new Point(4,6));
+        Point_StringConfigService puntoPelota = new Point_StringConfigService(new Point(4,6));
         puntoPelota.setLocalizacion();
         puntoPelota.revisorStrings();
 
-        Referencias nuevoCasting = new Referencias();
+        Referencias_Service nuevoCasting = new Referencias_Service();
         nuevoCasting.raisCastingStringAint("1254");
-
         nuevoCasting.raisCastingStirngASCII("144");
 
-        ListarRango alcanzeValor = new ListarRango();
-
+        ScopeService alcanzeValor = new ScopeService();
         alcanzeValor.imprimirTest();
 
-        Convertidor convertidor1 = new Convertidor();
-
+        StringCase_ConverterService convertidor1 = new StringCase_ConverterService();
         convertidor1.aMayusculas(args);
 
     }

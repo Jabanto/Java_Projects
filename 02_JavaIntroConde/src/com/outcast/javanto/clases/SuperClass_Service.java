@@ -1,15 +1,21 @@
-package clases;
-
+package com.outcast.javanto.clases;
 import java.awt.*;
 
 /**
- * Created by Jefe Maestro on 03/09/2016.
+ * @author JefeMaestro
+ * @Created on 2016
+ * This use a basic example of use of super clase using varible defined in the SuperClass_Service
+ * But  too the elements define in the extended class Point
+ *
+ *
  */
-public class Punto3D extends Point {
+public class SuperClass_Service  extends Point {
+
 
     public int z ;
 
-    public Punto3D(int x, int y, int z){
+    // En esta classe se utilizan tres variable 2 de ellas estan ya definidas en la clase Point
+    public SuperClass_Service(int x, int y, int z){
 
         // palabra cable super hace referencia a la suerclase Point, la y y x estan incluidas en la clase Point
         super(x,y);
@@ -20,7 +26,6 @@ public class Punto3D extends Point {
     }
 
     public void  move(int x,int y, int z){
-
 
         this.z = z;
         super.move(x, y);

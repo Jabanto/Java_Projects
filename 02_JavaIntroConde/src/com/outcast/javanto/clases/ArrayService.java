@@ -1,35 +1,35 @@
-package clases;
-import java.lang.String;
+package com.outcast.javanto.clases;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 /**
- * Created by Jefe Maestro on 23/08/2016.
+ * @Autor Javanto
+ * Definicion y Usos Basicos de Array en Java
+ * No se utiliza criterio basicos para la organizacion ni llamada de los metodos aqui solo se
+ * pone practicca conceptos básicos
  */
-public class Array {
+public class ArrayService {
 
-    // los array son un tipo especial de clases por eso podemos añadir inforacion usando new
+    // los array son un tipo especial de clases en el que podemos añadir información usando la llamada new
 
-     private int [] rentaPerCapita = new int[10];
+    private int [] rentaPerCapita = new int[10];
 
-    // para array no muy largos podemos darles valores directamente
-    //si despues de compilar añadimos otro valor , java no nos deja el compilador daria error
-    // la posicion de [] puede ser antes o despues del nombre de la variable
+    // Para arrays que no son muy largos podemos darles valores directamente al inicializar
+    // Si despues de compilar añadimos otro valor , java no nos deja el compilador daria error
+    // La posición de [] puede ser antes o despues del nombre de la variable
 
     private String []marcaImpresotas = {"brother","Cannon","tequila","olivetti"};
 
     //especicamos el valor del objeto de array que queremos modificar
 
-
-    private String citaDiaria = "La educaci";
+    private String citaDiaria = "La educacion es algo útil";
 
     public void  getMarcaImpresotas() {
         String marcas = ("hay " + marcaImpresotas.length + " marcas de impresoras.");
         System.out.println(marcas);
     }
 
-    // los valores numericos tiene valor inicilas de 0
-    // los boleanos tiene valor false //
+    // los valores numericos tienen un valor inicial de 0
+    // los boleanos tiene valor default de false //
     // y los String y objetos tienen valor inicial null
 
     public void eliminarEspacio(){
@@ -45,7 +45,6 @@ public class Array {
             else {
                 System.out.print('.');
             }
-
         }
         System.out.println("----------------");
     }

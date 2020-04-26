@@ -1,13 +1,12 @@
-package clases;
+package com.outcast.javanto.clases;
 
-import java.time.Year;
 import java.util.Calendar;
 
 /**
- * Created by Jefe Maestro on 17/08/2016.
+ * @author JefeMaestro
+ * Ejemmplo Basico de la classe Calender
  */
-public class Calender {
-
+public class CalenderService {
 
     Calendar ahora = Calendar.getInstance();
     int hora = ahora.get(Calendar.HOUR_OF_DAY);
@@ -83,5 +82,4 @@ public class Calender {
         System.out.println(" de " + an + ".");
     }
 
-    //
 }
