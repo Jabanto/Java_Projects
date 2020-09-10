@@ -2,16 +2,16 @@
 All the the projects that i make with Java version 10 or less
 Alles Ziele das ich mit java am Anfag gelernt haben sollte.
 
-# 1 Mit Java deine eigenen Progranne entwicheln
+# 1 Mit Java deine eigenen Programme entwicheln
 
-# 2 Lernen alles was man braucht um die Java Entveiroment zu verstehen und anzuwenden
+# 2 Lernen alles was man braucht um die Java Entviroment zu verstehen und anzuwenden
 
 # 3 Verstehen was Objektorientierte Programmierung ist
     Klassen, Objekte , abstrakte Klasse , Interface, Vererbung, Assozation, Modifikatoren  und vieles mehr
 
 # 4 Wie man Liste (ArraysList) sortieren kann
 
-# 5 Verstehen wioe das Collection Framework(Klasse) funktioniert
+# 5 Verstehen wie das Collection Framework(Klasse) funktioniert
 
 # 6 Was ist der Unterschied zwischen dem Comparable und Comparatir Interface
 
